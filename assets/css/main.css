@@ -1,0 +1,6 @@
+/* @import url('./main-two.css'); */
+
+a{
+    color-adjust: red;
+    font-size: medium;
+}

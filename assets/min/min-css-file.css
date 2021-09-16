@@ -1,0 +1,5 @@
+body{font:100% Helvetica,sans-serif;color:#333}
+div{background-color:azure}
+p{font-size:x-large}
+a{color-adjust:red;font-size:medium}
+.component{width:300px}@media (min-width:768px){.component{width:600px}}@media (min-width:768px) and (min-resolution:192dpi){.component{background-image:url(/img/retina2x.png)}}@media (min-width:1280px){.component{width:800px}}
