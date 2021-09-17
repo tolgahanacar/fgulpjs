@@ -26,6 +26,7 @@ gulp.task('default', function () {
 
     var mergedStream = merge(lessStream, scssStream, cssStream)
         .pipe(concat('min-css-file.css'))
+        .pipe(cleanss())
         .pipe(gulp.dest('assets/min/'));
 
     return mergedStream;
