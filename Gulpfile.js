@@ -9,12 +9,12 @@ var bower   = require('bower');
 
 gulp.task('default', function () {
 
-    var lessStream = gulp.src('./assets/less/style.less')
+    var lessStream = gulp.src('./assets/less/*.less')
         .pipe(less())
         .pipe(cssmin()) //I shrink less files with the help of "gulp-cssmin".
         .pipe(concat('style.less'));
 
-    var scssStream = gulp.src('./assets/sass/style.scss')
+    var scssStream = gulp.src('./assets/sass/*.scss')
         .pipe(sass({ outputStyle: "compressed" })) //I compress and write sass/scss files
         .pipe(concat('style.sass'));
 
